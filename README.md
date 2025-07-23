@@ -1,12 +1,19 @@
-# React + Vite
+# GraphScript Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository hosts the **official landing page** of [GraphScript](https://graphscript-labs.github.io), maintained by **GraphScript-Labs**.
 
-Currently, two official plugins are available:
+## What is GraphScript?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**GraphScript** is a **flow-based visual scripting language** that lets you create logic using connected blocks and nodes — like building code with a visual graph.
 
-## Expanding the ESLint configuration
+It's designed to be:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Intuitive** for beginners  
+- **Flexible** for advanced users  
+- Ideal for **prototyping**, **logic visualization**, and **interactive systems**
+
+GraphScript aims to make programming **more visual**, **modular**, and **accessible**.
+
+## **Visit the site**
+
+[**graphscript-labs.github.io**](https://graphscript-labs.github.io)
