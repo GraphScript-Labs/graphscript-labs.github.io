@@ -1,5 +1,6 @@
 import {
   Drill,
+  FolderGit2,
   LibraryBig,
   ToolCase,
   Trees,
@@ -29,6 +30,7 @@ export function Hero() {
         <HeroCard name="GSAM Compiler" icon={Drill} />
         <HeroCard name="Online Editor" icon={ToolCase} />
         <HeroCard name="Documentation" icon={LibraryBig} />
+        <HeroCard name="Source Code" icon={FolderGit2} />
       </div>
     </div>
   </>);
