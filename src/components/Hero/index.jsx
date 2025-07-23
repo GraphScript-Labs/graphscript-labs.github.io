@@ -12,6 +12,34 @@ import Logo from "@assets/GraphScript.png";
 import "./style.css";
 
 export function Hero() {
+  const actions = [
+    {
+      name: "Get Ecosystem",
+      icon: Trees,
+      href: "https://github.com/GraphScript-Labs/",
+    },
+    {
+      name: "GSAM Compiler",
+      icon: Drill,
+      href: "https://github.com/GraphScript-Labs/gsam-compiler",
+    },
+    {
+      name: "Online Editor",
+      icon: ToolCase,
+      href: "https://graphscript-labs.github.io/editor",
+    },
+    {
+      name: "Documentation",
+      icon: LibraryBig,
+      href: "https://graphscript-labs.github.io/docs",
+    },
+    {
+      name: "Open Source",
+      icon: FolderGit2,
+      href: "https://github.com/GraphScript-Labs",
+    },
+  ];
+
   return (<>
     <div className="hero">
       <div className="content">
@@ -26,11 +54,13 @@ export function Hero() {
         </div>
       </div>
       <div className="actions">
-        <HeroCard name="Get Ecosystem" icon={Trees} />
-        <HeroCard name="GSAM Compiler" icon={Drill} />
-        <HeroCard name="Online Editor" icon={ToolCase} />
-        <HeroCard name="Documentation" icon={LibraryBig} />
-        <HeroCard name="Source Code" icon={FolderGit2} />
+        {
+          actions.map((action, index) => <HeroCard
+              key={index}
+              {...action}
+            />
+          )
+        }
       </div>
     </div>
   </>);

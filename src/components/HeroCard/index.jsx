@@ -1,11 +1,16 @@
 import { MoveUpRight } from "lucide-react";
 import "./style.css";
 
-export function HeroCard({ name, icon }) {
+export function HeroCard({ name, icon, href }) {
   const CardIcon = icon;
 
+  const openLink = () => {
+    if (!href) return;
+    window.open(href, "_blank");
+  };
+
   return (<>
-    <div className="hero-card">
+    <div className="hero-card" onClick={openLink}>
       <div className="hero-card-icon-container">
         <CardIcon className="hero-card-icon" />
       </div>
