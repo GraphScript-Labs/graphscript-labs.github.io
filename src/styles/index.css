@@ -37,6 +37,7 @@ html, body, #root {
   cursor: default;
   background-color: var(--color-background);
   color: var(--color-white);
+  overflow-y: auto;
   font-family:
     "Lexend",
     "JetBrains Mono",
@@ -54,8 +55,8 @@ html, body, #root {
 }
 
 ::-webkit-scrollbar {
-  width: 0rem;
-  height: 0rem;
+  width: 0.5rem;
+  height: 0.5rem;
   background-color: #ffffff33;
 }
 
