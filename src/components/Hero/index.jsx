@@ -16,7 +16,7 @@ export function Hero() {
     {
       name: "Get Ecosystem",
       icon: Trees,
-      href: "https://github.com/GraphScript-Labs/",
+      href: "https://github.com/GraphScript-Labs/installer/releases",
     },
     {
       name: "GSAM Compiler",
