@@ -42,6 +42,8 @@ export function Hero() {
 
   return (<>
     <div className="hero">
+      <span className="hero-background" />
+
       <div className="content">
         <div className="brand">
           <div className="brand-logo">
@@ -53,6 +55,7 @@ export function Hero() {
           It's about Logic not Syntax
         </div>
       </div>
+
       <div className="actions">
         {
           actions.map((action, index) => <HeroCard
