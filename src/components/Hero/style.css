@@ -5,6 +5,40 @@
   justify-content: center;
   gap: 4rem;
   height: 100vh;
+  position: relative;
+
+  --gradient-height: 1.5rem;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: var(--gradient-height);
+  z-index: -1;
+  background: linear-gradient(
+    to right,
+    var(--color-secondary),
+    var(--color-tertiary)
+  );
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: var(--gradient-height);
+  z-index: -1;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    transparent 50%,
+    var(--color-background)
+  );
 }
 
 .hero-background {
