@@ -6,8 +6,9 @@
   gap: 4rem;
   height: 100vh;
   position: relative;
+  margin-bottom: 4rem;
 
-  --gradient-height: 1.5rem;
+  --gradient-height: 3rem;
 }
 
 .hero::before {
@@ -36,7 +37,6 @@
   background: linear-gradient(
     to bottom,
     transparent,
-    transparent 50%,
     var(--color-background)
   );
 }
