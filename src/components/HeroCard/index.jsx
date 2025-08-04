@@ -6,7 +6,7 @@ export function HeroCard({ name, icon, href }) {
 
   const openLink = () => {
     if (!href) return;
-    window.open(href, "_blank");
+    location.href = href;
   };
 
   return (<>
