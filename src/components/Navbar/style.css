@@ -28,6 +28,11 @@
   font-size: 1.2rem;
   position: relative;
   background: var(--gradient);
+  opacity: 0.5;
+}
+
+.nav-links:hover {
+  opacity: 1;
 }
 
 .nav-link {
