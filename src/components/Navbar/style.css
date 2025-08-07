@@ -23,12 +23,12 @@
   align-items: center;
   height: 100%;
   gap: 0.5rem;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   position: relative;
   background: var(--gradient);
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .nav-links:hover {
@@ -40,7 +40,7 @@
   text-decoration: none;
   cursor: pointer;
   position: relative;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.75rem;
   border-radius: 0.5rem;
 }
 
@@ -51,7 +51,7 @@
 .nav-link-sep {
   display: block;
   width: 0.125rem;
-  height: 2rem;
+  height: 1rem;
   background: white;
   transition: width 0.3s ease-in-out;
 }

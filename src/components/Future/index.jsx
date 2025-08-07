@@ -14,14 +14,14 @@ export function Future() {
     ].join(" "),
     [
       "It will be very easy to use, in desktops, web and most importantly,",
-      "in virtual and augmented reality(in the future).",
+      "in virtual and augmented reality (in the future).",
     ].join(" "),
   ];
 
   return (<>
     <Section
       icon={<RectangleGoggles />}
-      name="The Future of Programming is Coming!"
+      name="Programming Like The Future"
     >
       {contents.map(text => <p key={text}>{text}</p>)}
     </Section>
