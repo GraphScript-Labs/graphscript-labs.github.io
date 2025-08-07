@@ -2,6 +2,11 @@
   display: flex;
   padding: 2rem;
   align-items: start;
+  margin-bottom: 15rem;
+}
+
+.section:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 .section-icon {
@@ -57,7 +62,7 @@
 
 @media (max-width: 1000px) {
   .section {
-    flex-direction: column;
+    flex-direction: column !important;
     align-items: center;
   }
 
@@ -69,10 +74,6 @@
   .section-content {
     padding: 2rem;
     width: 100%;
-  }
-
-  .section-description {
-    text-wrap-style: balance;
   }
 }
 
