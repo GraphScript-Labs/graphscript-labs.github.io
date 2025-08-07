@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Hamburger } from "lucide-react";
 
 import "./style.css";
 
 export function Navbar() {
   const [active, setActive] = useState(false);
+  const [navTop, setNavTop] = useState(true);
 
   const links = [
     {
@@ -41,8 +42,28 @@ export function Navbar() {
     },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const rootElement = document.getElementById("root");
+      setNavTop(rootElement.scrollTop === 0);
+    };
+    
+    const rootElement = document.getElementById("root");
+    rootElement.addEventListener("scroll", handleScroll);
+    handleScroll();
+    
+    return () => {
+      rootElement.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (<>
-    <div className="navbar">
+    <div
+      className={[
+        "navbar",
+        navTop ? "nav-top" : "",
+      ].join(" ")}
+    >
       <div
         onClick={() => setActive(!active)}
         className={[

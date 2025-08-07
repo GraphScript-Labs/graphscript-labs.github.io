@@ -11,7 +11,9 @@
   --color-success: #4CAF50;
   --color-warning: #FF9800;
 
-  --color-background: #111111;
+  --color-background: #E0E0E0;
+  --color-text: #111111;
+  --color-gradient: #FFFFFF;
 
   --gradient: linear-gradient(
     to bottom right,

@@ -31,12 +31,13 @@
   opacity: 0.3;
 }
 
+.nav-top .nav-links,
 .nav-links:hover {
   opacity: 1;
 }
 
 .nav-link {
-  color: white;
+  color: var(--color-gradient);
   text-decoration: none;
   cursor: pointer;
   position: relative;
@@ -52,7 +53,7 @@
   display: block;
   width: 0.125rem;
   height: 1rem;
-  background: white;
+  background: var(--color-gradient);
   transition: width 0.3s ease-in-out;
 }
 
