@@ -59,6 +59,12 @@
 
 .section-description p {
   text-align: left;
+  user-select: text;
+}
+
+.section-description p::selection {
+  background: var(--color-primary);
+  color: var(--color-white);
 }
 
 @media (max-width: 1000px) {
