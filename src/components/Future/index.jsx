@@ -1,5 +1,5 @@
-import { Section } from "@components/Section";
 import { RectangleGoggles } from "lucide-react";
+import { Section } from "@components/Section";
 
 export function Future() {
   const contents = [
