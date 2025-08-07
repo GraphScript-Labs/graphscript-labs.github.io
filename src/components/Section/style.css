@@ -30,7 +30,7 @@
 
 .section-content {
   flex: 2;
-  padding: 4rem;
+  padding: 0 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
