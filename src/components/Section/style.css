@@ -17,11 +17,15 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  border-radius: 1rem;
+  aspect-ratio: 1;
+  background: var(--gradient);
 }
 
-.section-icon > * {
+.section-icon * {
   width: 100%;
   height: 100%;
+  color: var(--color-gradient) !important;
 }
 
 .section-content {
