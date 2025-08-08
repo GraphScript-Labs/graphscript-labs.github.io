@@ -69,6 +69,10 @@
   justify-content: center;
 }
 
+.hamburger > * {
+  color: var(--color-gradient);
+}
+
 @media (max-width: 1000px) {
   .hamburger {
     display: flex;
