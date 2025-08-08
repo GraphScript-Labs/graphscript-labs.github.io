@@ -69,7 +69,7 @@
   justify-content: center;
 }
 
-.hamburger > * {
+.hamburger * {
   color: var(--color-gradient);
 }
 
