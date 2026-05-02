@@ -1,0 +1,14 @@
+.socials-linklets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+@media (max-width: 1200px) {
+  .socials-linklets {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
