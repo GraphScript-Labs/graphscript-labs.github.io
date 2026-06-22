@@ -1,8 +1,9 @@
+import { useAsset } from "src/assets/assets";
+
 import { Container } from "@components/ui/structure/container";
 import { Image } from "@components/ui/structure/image";
 import { NodeBG } from "@components/ui/structure/node-bg";
 import { Heading } from "@components/ui/text/heading";
-import { useAsset } from "src/assets/assets";
 import { useClasses } from "@styles";
 
 export function Hero() {

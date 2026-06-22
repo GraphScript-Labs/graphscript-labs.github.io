@@ -20,15 +20,13 @@ export function About() {
         </Text>
 
         <LineBreak />
-
         <Text>
           GraphScript is a visual scripting ecosystem that focuses on
           the logical and flow aspects of software development rather than
           the typical code-centric approach.
         </Text>
-        
-        <LineBreak />
 
+        <LineBreak />
         <Text>
           It provides a visual interface where developers can create
           complex workflows and processes by creating and connecting nodes
@@ -37,7 +35,6 @@ export function About() {
         </Text>
 
         <LineBreak />
-
         <Text>
           This allows developers to focus on the logical structure of their
           applications without getting bogged down in the syntax and details

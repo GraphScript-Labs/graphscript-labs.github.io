@@ -1,5 +1,6 @@
-import { useClasses } from "@styles";
 import { ComponentChildren } from "preact";
+
+import { useClasses } from "@styles";
 
 interface ClickableProps {
   onClick: () => void;
@@ -16,6 +17,7 @@ export function Clickable({
 }: ClickableProps) {
   return <span
     className={useClasses("clickable") + " " + className}
+
     onClick={(event) => {
       onClick();
       onEventClick?.(event);

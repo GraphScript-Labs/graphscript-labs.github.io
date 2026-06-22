@@ -1,4 +1,5 @@
 import { render } from 'preact';
+
 import { HomePage } from '@routes/home';
 
 function App() {

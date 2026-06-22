@@ -77,7 +77,7 @@ async function buildObjectFile(resolvedClassNames, templateLang="js") {
 
   const fileContent = templates[templateLang].replace(
     '[[CLASS_NAMES]]',
-    Array.from(new Set(resolvedClassNames)).map(
+    Array.from(new Set(resolvedClassNames)).sort().map(
       name => `  '${name}': '${name}'`
     ).join(',\n')
   );

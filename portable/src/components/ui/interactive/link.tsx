@@ -1,5 +1,6 @@
-import { Clickable } from "@components/ui/interactive/clickable";
 import { ComponentChildren } from "preact";
+
+import { Clickable } from "@components/ui/interactive/clickable";
 
 interface LinkProps {
   url: string;
@@ -12,6 +13,7 @@ export function Link({ url, className, children, newTab = false }: LinkProps) {
   return (
     <Clickable
       className={className}
+
       onClick={() => {
         if (newTab) {
           window.open(url, "_blank");

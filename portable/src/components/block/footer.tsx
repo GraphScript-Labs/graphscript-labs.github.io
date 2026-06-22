@@ -15,7 +15,7 @@ export function Footer({}: FooterProps) {
           <Heading size="max">
             GraphScript
           </Heading>
-          
+
           <Heading size="small">
             © {year} GraphScript Labs
           </Heading>
