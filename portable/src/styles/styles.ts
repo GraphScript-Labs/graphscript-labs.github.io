@@ -53,6 +53,7 @@ const classNames = {
   'menu-top-right': 'menu-top-right',
   'node-bg': 'node-bg',
   'node-bg-node': 'node-bg-node',
+  'parallax': 'parallax',
   'scrollpop': 'scrollpop',
   'section': 'section',
   'section-content': 'section-content',
