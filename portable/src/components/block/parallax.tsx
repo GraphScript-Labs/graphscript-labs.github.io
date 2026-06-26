@@ -7,6 +7,7 @@ export function Parallax() {
     <Container
       className={useClasses("parallax")}
       children={null}
+
       attributes={{
         "img-l-src": `url("${useAsset("parallax-l.svg")}")`,
         "img-d-src": `url("${useAsset("parallax-d.svg")}")`,

@@ -1,0 +1,32 @@
+.about-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.about-visual {
+  flex: 4;
+}
+
+.about-description {
+  padding-top: 4rem;
+  flex: 3;
+}
+
+.about-text {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 950px) {
+  .about-content {
+    flex-direction: column-reverse;
+  }
+
+  .about-description {
+    padding-top: 0;
+  }
+
+  .about-text {
+    font-size: 1.25rem;
+  }
+}
+

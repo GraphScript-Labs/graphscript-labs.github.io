@@ -1,6 +1,7 @@
+import { CodeFile } from "@components/block/code-file";
 import { Section } from "@components/kit/section";
+import { Container } from "@components/ui/structure/container";
 import { Heading } from "@components/ui/text/heading";
-import { LineBreak } from "@components/ui/text/line-break";
 import { Text } from "@components/ui/text/text";
 import { useClasses } from "@styles";
 
@@ -11,36 +12,29 @@ export function About() {
         What's GraphScript?
       </Heading>
 
-      <Text>
-        <Text>
-          Software development is about solving problems and building
-          solutions, not just writing code. It's more inclined towards
-          building logical workflows and processes, rather than just
-          writing lines of code.
-        </Text>
+      <Container className={useClasses("about-content")}>
+        <Container className={useClasses("about-visual")}>
+          <CodeFile
+            fileName="AI-Chatbot-Logic.gsam"
 
-        <LineBreak />
-        <Text>
-          GraphScript is a visual scripting ecosystem that focuses on
-          the logical and flow aspects of software development rather than
-          the typical code-centric approach.
-        </Text>
+            code={[
+              "Wait for input",
+              "Send input to AI",
+              "Receive output from AI",
+              "Send output to user",
+              "Go to Start and repeat",
+            ]}
+          />
+        </Container>
 
-        <LineBreak />
-        <Text>
-          It provides a visual interface where developers can create
-          complex workflows and processes by creating and connecting nodes
-          that represent different operations, data transformations, and
-          control flow elements.
-        </Text>
-
-        <LineBreak />
-        <Text>
-          This allows developers to focus on the logical structure of their
-          applications without getting bogged down in the syntax and details
-          of writing code.
-        </Text>
-      </Text>
+        <Container className={useClasses("about-description")}>
+          <Text className={useClasses("about-text")}>
+            Instead of Syntax that only computer, god and for a small
+            period of time a few humans can understand, use flowcharts
+            to write your code.
+          </Text>
+        </Container>
+      </Container>
     </Section>
   );
 }

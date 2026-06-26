@@ -1,8 +1,19 @@
 // AUTO GENERATED FILE - DO NOT EDIT
 
 const classNames = {
+  'about-content': 'about-content',
+  'about-description': 'about-description',
+  'about-text': 'about-text',
+  'about-visual': 'about-visual',
   'audience-infolets': 'audience-infolets',
   'clickable': 'clickable',
+  'code-block': 'code-block',
+  'code-block-next': 'code-block-next',
+  'code-file': 'code-file',
+  'code-file-content': 'code-file-content',
+  'code-file-tab': 'code-file-tab',
+  'code-file-tab-close': 'code-file-tab-close',
+  'code-file-tab-text': 'code-file-tab-text',
   'dark': 'dark',
   'ecosystem-textlets': 'ecosystem-textlets',
   'error-code': 'error-code',
@@ -68,10 +79,10 @@ const classNames = {
 
 export type ClassName = (keyof typeof classNames);
 export type PossibleClassName = ClassName | false | null | undefined;
-
 export function useClasses(...args: PossibleClassName[]): string {
   const validClass = (arg: PossibleClassName) => !!(arg && arg in classNames);
   const validClasses = args.filter(validClass) as ClassName[];
+
   return validClasses.map(arg => classNames[arg]).join(' ');
 }
 

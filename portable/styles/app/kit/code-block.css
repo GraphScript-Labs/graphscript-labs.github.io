@@ -1,0 +1,21 @@
+.code-block {
+  display: flex;
+  align-items: start;
+  gap: 1.25rem;
+  padding: 1rem;
+  background-color: var(--color-focus);
+  border-radius: 0.75rem;
+}
+
+.code-block-next {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.code-block-next:last-of-type {
+  display: none;
+}
+

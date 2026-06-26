@@ -16,7 +16,6 @@ function Layout({ forwarded, dynamic, children }: LayoutProps) {
 
   return <>
     <Parallax />
-
     <Container>
       <Menu position="top-left">
         <MenuBrand />
