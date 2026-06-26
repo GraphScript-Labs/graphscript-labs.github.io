@@ -13,6 +13,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  color: var(--color-shade);
 }
 
 .code-block-next:last-of-type {
