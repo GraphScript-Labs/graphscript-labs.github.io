@@ -1,0 +1,32 @@
+.ecosystem-textlets {
+  display: grid;
+  gap: 2rem;
+  grid-template-areas:
+    "textlet1 textlet1 textlet2 textlet2"
+    "blank1 textlet3 textlet3 blank2";
+}
+
+.ecosystem-textlets > :nth-child(1) {
+  grid-area: textlet1;
+}
+
+.ecosystem-textlets > :nth-child(2) {
+  grid-area: textlet2;
+}
+
+.ecosystem-textlets > :nth-child(3) {
+  grid-area: textlet3;
+}
+
+@media (max-width: 600px) {
+  .ecosystem-textlets {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .ecosystem-textlets > * {
+    flex: 1;
+  }
+}
+
